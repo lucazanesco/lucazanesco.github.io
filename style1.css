@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-color: rgb(169, 157, 157);
+    --logo-color: rgb(238, 239, 132);
+    --second-color: rgb(195, 45, 45);
+    --rectangle-color: #2e2e96;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: black ;
+    padding-bottom: 2000px;
+    background-color: #fff;
+    position: relative;
+}
+
+
+.flex {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+}
+
+.red_text {
+    color: var(--second-color);
+}
+
+
+.inbl{
+    display: inline-block;
+}
+
+
+.center {
+    text-align: center;
+}
+
+
+.paragrafi_section {
+    font-size: 1.1em;
+    line-height: 1.5;
+    
+}
+
+.spacer_bottom {
+    padding-bottom: 2rem;
+}
+
+.double_sb {
+    padding-bottom: 3rem;
+}
+
+.spacer_left {
+    padding-left: 3rem;
+}
+
+.spacer_right {
+    padding-right: 3rem;
+}
+
+.double_sr {
+    padding-right: 4rem;
+}
+
+.spacer_top {
+    padding-top: 3rem;
+}
+
+
+
+.bolder {
+    font-weight: bolder;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/* -- Helpers -- */
+
+.flexw {
+    flex-basis: 90%;
+    text-align: center;
+
+}
+
+.titoli_page {
+    font-size: 3.2em;
+    text-transform: capitalize;
+}
+
+.titoli_2 {
+    font-size: 2.5em;
+}
+
+.titoli_cibo {
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+.par {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    padding-top: 1rem;
+}
+
+#menuNat ul li {
+    text-align: left;
+    list-style: none;
+    padding: 0.5em 0;
+    letter-spacing: 0.1em;
+}
+
+.serv a {
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-style: oblique;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.serv a div {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--second-color);
+    color: black;
+    font-weight: bolder;
+    border-radius: 999em;
+}
+ 
+.serv a span {
+    margin: 0 auto;
+}
+
+.serv a div:hover {
+    background-color: #fff;
+}
+
+.serv a:hover {
+    font-size: 1.55em;
+}
+
+.back {
+    color: #fff;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-style: oblique;
+    transition: 0.5s;
+    position: fixed;
+
+}
+
+.back div {
+    font-size: 2em;
+    margin-left: 1rem;
+    background-color: var(--second-color);
+    font-weight: bolder;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999em;
+    position: relative;
+    
+}
+
+.back div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.back:hover {
+    opacity: 0.5;
+}
+
+
+
+/* -- Personal_Coaching -- */
+
+/* -- Fisioterapia -- */
+.spacer_top_top {
+    margin-top: 10rem;
+}
+
+/* -- Fisioterapia -- */
+
+/* -- Corsi -- */
+
+#corsi .flex_box_home img {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    
+}
+
+.spacer_corsi {
+    padding-bottom: 0.5rem;
+}
+
+#corsi img {
+    max-width: 60%;
+}
+/* -- Corsi -- */
+
+
+
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+        }
+    100% {
+        opacity: 0.3;
+        transform: translateY(1rem);
+        }
+}
+
+@keyframes arrow-down {
+    0% {
+        opacity: 0;
+        }
+    25% {
+        opacity: .2;
+        }
+    50% {
+        opacity: .4;
+        }
+    75% {
+        opacity: .6;
+        }
+    100% {
+        opacity: 0.75;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
