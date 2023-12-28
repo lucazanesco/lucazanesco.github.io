@@ -98,6 +98,7 @@ body {
 .flexw {
     flex-basis: 90%;
     text-align: center;
+    position: relative;
 
 }
 
