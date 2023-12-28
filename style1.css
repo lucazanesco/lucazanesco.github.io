@@ -104,7 +104,7 @@ body {
 .titoli_page {
     font-size: 3em;
     text-transform: capitalize;
-    
+
 }
 
 .titoli_2 {
@@ -122,7 +122,7 @@ body {
     background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/img_Cap/capodanno_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .titoli_cibo {
