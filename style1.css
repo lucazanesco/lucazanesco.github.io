@@ -118,8 +118,8 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/capodanno.jpg');
-    background-size: contain;
+    background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/img_Cap/capodanno.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
 }
