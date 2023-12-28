@@ -28,6 +28,12 @@ body {
     justify-content: space-around;
 }
 
+.flex_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .red_text {
     color: var(--second-color);
 }
@@ -102,6 +108,24 @@ body {
 
 .titoli_2 {
     font-size: 2em;
+}
+
+#rec_tit {
+    position: relative;
+}
+
+#rec_tit::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/capodanno.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 .titoli_cibo {
