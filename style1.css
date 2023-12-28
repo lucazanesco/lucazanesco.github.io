@@ -110,11 +110,8 @@ body {
     font-size: 2em;
 }
 
-#rec_tit {
-    position: relative;
-}
 
-#rec_tit::before {
+.flexw::before {
     content: "";
     top: 0;
     left: 0;
@@ -122,10 +119,9 @@ body {
     width: 100%;
     position: absolute;
     background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/capodanno.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    z-index: -1;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .titoli_cibo {
