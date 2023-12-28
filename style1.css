@@ -98,7 +98,6 @@ body {
 .flexw {
     flex-basis: 90%;
     text-align: center;
-    position: relative;
 
 }
 
@@ -119,7 +118,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/img_Cap/capodanno.jpg');
+    background-image: url('/Users/lucazanesco/Documents/GitHub/lucazanesco.github.io/img_Cap/capodanno_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
