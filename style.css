@@ -455,7 +455,7 @@ a {
 
 .serv_box div {
     position: relative;
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
     z-index: 1;
     transition: 5s;
 }
