@@ -1,0 +1,1294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-color: rgb(169, 157, 157);
+    --logo-color: rgb(238, 239, 132);
+    --second-color: rgb(195, 45, 45);
+    --rectangle-color: #2e2e96;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #fff ;
+    background-color: black;
+    position: relative;
+}
+
+
+/* -- Helpers -- */
+
+.section {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.smallsect {
+    width: 100%;
+    height: 300px;
+}
+
+
+.flex {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+}
+
+.red_text {
+    color: var(--second-color);
+}
+
+.inbl{
+    display: inline-block;
+}
+
+.strong_1 {
+    color: var(--logo-color);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.vuoto {
+    background-color: black;
+    height: 5rem;
+    width: 100%;
+}
+
+.titoli_section {
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 5rem;
+}
+
+.paragrafi_section {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.spacer_bottom {
+    padding-bottom: 2rem;
+}
+
+.double_sb {
+    padding-bottom: 3rem;
+}
+
+.spacer_left {
+    padding-left: 3rem;
+}
+
+.spacer_right {
+    padding-right: 3rem;
+}
+
+.double_sr {
+    padding-right: 4rem;
+}
+
+.spacer_top {
+    padding-top: 3rem;
+}
+
+.freccia_giu {
+    font-size: 5em;
+    color: var(--second-color);
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.back_black {
+    background-color: black;
+}
+
+/* -- Helpers -- */
+
+/* -- Menu -- */
+
+.logo {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: var(--logo-color);
+    font-weight: bold;
+    font-style: oblique;
+    padding: 30px;
+    cursor: pointer; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    transition: 0.8s;
+    z-index: 2;
+}
+
+
+
+header li {
+    display: inline-block;
+    padding: 2em;
+    list-style: none;
+}
+
+.menu a, .logsign a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.menu a:hover {
+    letter-spacing: 2px;
+}
+
+.hamb_menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 1.2rem;
+    right: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+}
+
+.user {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 999em;
+    margin-bottom: 1rem;
+    
+}
+
+.hamb_menu .bar {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+header.black {
+    background: var(--header-color);
+    opacity: 0.95;
+}
+
+.logsign a{
+    font-size: 0.8em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+/* -- Menu -- */
+
+/* -- Home -- */
+
+.flex_box_home {
+    flex: 50%; 
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+
+#home img {
+    max-width: 200%;
+}
+
+
+a {
+    color: rgb(130, 179, 89); 
+  
+
+}
+
+#home a:visited, #chi_siamo a:visited, #spiega_servizi a:visited, .flexw p a:visited, .smallsect a:visited {
+    color: plum;
+      
+}
+
+#home a:hover, #chi_siamo a:hover, #spiega_servizi a:hover, .flexw p a:hover, .smallsect a:hover {
+    color: rgb(106, 208, 234);    
+
+}
+
+
+/* -- Scroll-Down -- */
+.scroll-down {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mouse {
+    width: 2.5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    display: flex;
+}
+
+#home .mouse span {
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+
+.arrow span {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    border: 2px solid transparent;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    transform: rotate(45deg);
+    animation: arrow-down .5s alternate infinite;
+}
+/* -- Scroll-Down -- */
+
+/* -- Home -- */
+
+/* -- Chi_Siamo -- */
+
+
+#chi_siamo img {
+   max-width: 70%;
+   border-radius: 50% 30%;
+}
+
+.flex_box_chi_siamo {
+    flex: 30%;      
+}
+
+
+ /* -- Chi_Siamo -- */
+
+ /* -- Servizi -- */
+
+.flex_box_servizi {  
+    display: inline-block;  
+}
+
+#servizi div:nth-of-type(2) {
+    flex: 55%;
+}
+
+
+#servizi a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rectangle {
+    width: 45%;
+    height: 15rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    border-radius: 15px 50px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.titoli_rectangle {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 6rem;
+
+}
+
+#rectangle_1::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 50px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#rectangle_2::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 50px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#rectangle_3::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 50px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#rectangle_4::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 50px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+.rectangle:hover {
+    transform: scale(1.05);
+}
+
+.flexw {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+#p_coach::before {
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/sfondo_servizi2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter:saturate(10) grayscale(100%);
+    z-index: -5;
+    opacity: 0.2;
+    
+}
+
+
+.titoli_servizi {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.serv_box div {
+    position: relative;
+    padding: 2rem 5rem;
+    z-index: 1;
+    transition: 5s;
+}
+
+
+.serv_box div::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(33, 32, 32);
+    z-index: -2;
+    opacity: 0.3;
+    border-radius: 40px 80px;
+}
+
+#fisio::before {
+    content: "";
+    top: 0;
+    left: 90vh;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/sfondo_servizi.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter:saturate(10) grayscale(100%);
+    z-index: -3;
+    opacity: 0.2;
+    
+}
+.flexw a {
+    color: #fff;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+.flex p a {
+    color:  rgb(130, 179, 89);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.button {
+    color: #fff;
+    margin-top: 4rem;
+    background-color: var(--second-color);
+    display: inline-block;
+    border-radius: 40px 80px;
+    border: none;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 1em;
+    transition: all .5s ease;
+
+}
+
+.button i {
+    padding-left: 1em;
+}
+
+.button:hover {
+    font-size: 1.25em;
+
+}
+
+.button:active {
+    font-size: 1.15em;
+
+}
+
+.hid_paragraph {
+    display: none;
+}
+
+a i {
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+
+.material-icons {
+    color: rgb(195, 178, 178);
+}
+
+/*-- Tabella --*/
+
+#tabella_orari {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 5rem;
+
+}
+
+td, th {
+    border: 1px solid rgb(107, 103, 103);
+    text-align: center;
+    
+}
+
+th {
+    height: 5rem;
+    font-size: 1.2em;
+    background-color: rgb(46, 43, 43);
+}
+
+td {
+    padding: 0.5rem;
+    height: 3rem;
+    text-align: center;
+    width: 8%;
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: oblique;
+    position: relative;
+      
+}
+
+td::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+.orari {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: var(--second-color);
+}
+
+.rigavuota {
+    border-left: none;
+    border-right: none;
+    
+}
+
+.skip {
+    text-indent: -999px;
+}
+
+/*-- Tabella --*/
+
+/*-- joinus --*/
+
+.flex_col {
+    flex-direction: column;
+    text-align: center;
+}
+
+#joinus {
+    background: #e5e2e2;
+    color: black;
+}
+
+#joinus h4 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+#joinus a {
+    color: black;
+    margin-top: 2rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-style: oblique;
+    transition: 0.5s;
+}
+
+#joinus a div {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    color: #fff;
+    border-radius: 999em;
+}
+ 
+#joinus a span {
+    margin: 0 auto;
+}
+
+#joinus a div:hover {
+    background-color: var(--second-color);
+}
+
+#joinus a:hover {
+    font-size: 1.55em;
+}
+
+
+
+/*-- joinus --*/
+
+/* -- Servizi -- */
+
+
+/*-- Galleria --*/
+
+
+.flex_box_gallery {
+    flex: 50%;
+}
+
+#gallery {
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+#gallery_1 {
+    padding-top: 10rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+#gallery img {
+    border-radius: 50px 90px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#galleria {
+    position: relative;
+}
+
+#galleria div:nth-of-type(2) {
+    flex: 55%;
+}
+
+#galleria .scroll-down {
+    bottom: 0.1rem;
+    align-content: center;
+}
+
+#galleria a {
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#galleria .mouse {
+    width: 10rem;
+    height: 2rem;
+}
+
+#galleria .mouse span {
+    font-style: oblique;
+    font-weight: lighter;
+    animation: arrow-down 1s alternate infinite;
+    margin: auto;
+    
+}
+
+
+#gallery_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease;
+}
+
+.h-stretch {
+    grid-column: span 2;
+}
+
+.v-stretch {
+    grid-row: span 2;
+}
+
+.vh-stretch {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/*-- Galleria --*/
+
+
+/*-- Contatti --*/
+
+.flex_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: normal;
+
+}
+
+i {
+    padding-right: 0.5em;
+}
+
+#contatti ul li {
+    font-size: 1.2em;
+    line-height: 1.5;
+    list-style: none;
+}
+
+#contatti ul li:last-of-type {
+    margin-bottom: 2rem;
+}
+
+/*-- Contatti --*/
+
+
+/* -- Footer -- */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+}
+
+.foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.6em;
+    margin-top: 5rem;
+    height: 3rem;
+    font-weight: lighter;
+    letter-spacing: 0.25em;
+    background-color: rgb(38, 37, 37);
+
+}
+
+
+/* -- Footer -- */
+
+/* -- Personal_Coaching -- */
+
+.titoli_section_page {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.numbers{
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    border-radius: 999em;
+    margin-bottom: 1rem;
+}
+
+.serv a {
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-style: oblique;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.serv a div {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--second-color);
+    color: black;
+    font-weight: bolder;
+    border-radius: 999em;
+}
+ 
+.serv a span {
+    margin: 0 auto;
+}
+
+.serv a div:hover {
+    background-color: #fff;
+}
+
+.serv a:hover {
+    font-size: 1.55em;
+}
+
+.back {
+    color: #fff;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-style: oblique;
+    transition: 0.5s;
+    position: fixed;
+
+}
+
+.back div {
+    font-size: 3em;
+    margin-left: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999em;
+    position: relative;
+    z-index: 20;
+    
+}
+
+.back div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+
+.back:hover {
+    opacity: 0.5;
+}
+
+
+/* -- Fisioterapia -- */
+.spacer_top_top {
+    margin-top: 10rem;
+}
+
+/* -- Fisioterapia -- */
+
+/* -- Corsi -- */
+
+#corsi ul li {
+    display: inline;
+    padding: 1em;
+    list-style: none; 
+    transition: all 0.3s;
+} 
+
+#corsi ul li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#corsi ul li:hover {
+    border-bottom: 1px solid var(--logo-color);
+}
+
+.sticky {
+    position: sticky;
+    top: 4rem;
+    padding: 2rem;
+    background-color: black;
+    z-index: 1;
+}
+
+#corsi div .flexw {
+    z-index: -2;
+}
+
+.spacer_corsi {
+    padding-bottom: 0.5rem;
+}
+
+#corsi img {
+    max-width: 60%;
+}
+/* -- Corsi -- */
+
+
+
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+        }
+    100% {
+        opacity: 0.3;
+        transform: translateY(1rem);
+        }
+}
+
+@keyframes arrow-down {
+    0% {
+        opacity: 0;
+        }
+    25% {
+        opacity: .2;
+        }
+    50% {
+        opacity: .4;
+        }
+    75% {
+        opacity: .6;
+        }
+    100% {
+        opacity: 0.75;
+        }
+}
+
+/* -- Resizing --*/
+
+@media only screen and (max-width: 1300px){
+
+    .spacer_right {
+        padding: 0;
+    }
+
+    .titoli_section {
+        margin: auto;
+    }
+
+    .logo {
+        padding-left: 1rem;
+    }
+
+
+
+    .menu{
+        position: fixed;
+        right: -100%;
+        top: 4rem;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 47, 47);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.5s;
+    }
+ 
+    .menu li:first-of-type {
+        margin-top: 3rem;
+    }
+
+    .menu li {
+        padding: 2rem;
+        border: solid 2px var(--header-color);
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+    .user {
+        display: block;
+
+    }
+
+
+    .logsign {
+        position: fixed;
+        top: -100%;
+        right: 0;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(49, 47, 47);
+        width: 50%;
+        height: 25%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .logsign li {
+        border: solid 2px var(--header-color);
+        padding: 1rem;
+        margin: 1rem 2rem;
+        cursor: pointer;
+    }
+
+
+
+
+    .menu.active {
+        right: 0;
+    }
+
+    .logsign.active {
+        top: 4rem;
+    }
+
+    .hamb_menu {
+        display: flex;
+    }
+
+    .hamb_menu.active .bar:nth-child(2)  {
+        opacity: 0;
+
+    }
+
+    .hamb_menu.active .bar:nth-child(1)  {
+        transform: translateY(10px) rotate(45deg);
+
+    }
+
+    .hamb_menu.active .bar:nth-child(3)  {
+        transform: translateY(-10px) rotate(-45deg);
+
+    }
+
+    #home {
+        height: 100vh;
+        padding: 5rem 0;
+    }
+
+
+    #home .flex_box_home {
+        display: flex;
+        flex: 90%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #home img {
+        display: none;
+    }
+
+    #home .scroll-down {
+        bottom: 1rem;
+    }
+
+    #chi_siamo {
+        height: 100%;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    #chi_siamo h2 {
+        padding: 2rem 0;
+    }
+    #chi_siamo .flex_box_chi_siamo {
+        flex: 70%; 
+    }
+
+    #chi_siamo img {
+        max-width: 40%;
+        padding-bottom: 2rem;
+    }
+
+    #chi_siamo p {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5rem;
+    }
+
+    #servizi {
+        height: 100%;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    #servizi h2 {
+        padding: 2rem 2rem;
+    }
+
+    #servizi .rectangle {
+        width: 60vh;
+        padding: 5% 20%;
+    }
+
+    #servizi .flex_box_servizi {
+        flex-direction: row;
+    }
+
+    #servizi .titoli_rectangle {
+        font-size: 1.8em;
+        padding-top: 3rem;
+        opacity: 0.5;
+    }
+
+
+    .serv_box {
+        height: 100%;
+        padding-top: 2rem;
+    }
+
+    .flexw {
+        flex-basis: 80%;
+    }
+
+    #tabella_orari {
+        transform: scale(0.8);
+        margin-top: 2rem;
+    }
+
+    #joinus p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .smallsect {
+        height: 400px;
+    }
+
+    /* Tolgo il secondo flex per far si che il titolo rimanga centrale durante il resizing */
+    #galleria .flex_box_servizi:nth-of-type(2) {
+        display: none;
+    }
+
+    #gallery {
+        display: none;
+    }
+    
+    #galleria .scroll-down {
+        display: none;
+    }
+
+    #gallery_1 {
+        padding-top: 0;
+        max-width: 90%;
+        grid-template-columns: auto;
+        grid-auto-flow: row;
+    }
+
+    #contatti .titoli_section {
+        padding-bottom: 2rem;
+    }
+
+    #contatti ul {
+        font-size: 0.85em;
+    }
+
+    #contatti ul li i {
+        padding-left: 0.5rem;
+        font-size: 0.9em;
+    }
+    
+   
+}
+
+@media only screen and (max-width: 670px) {
+
+
+    .titoli_section {
+        font-size: 4em;
+    }
+
+    #home .titoli_section {
+        font-size: 5em;
+    }
+
+    #home p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    #tabella_orari {
+        display: none;
+    }
+
+    .serv_box div::before {
+        border-radius: 0px 0px;
+        background-color: black;
+    }
+
+    .flexw {
+        flex: 80%;
+    }
+
+    
+
+    .h-stretch {
+        grid-column: span 1;
+    }
+
+    .v-stretch {
+        grid-row: span 1;
+    }
+
+    .vh-stretch {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+
+
+}
+
+
+/* -- Resizing --*/
+
+
+
+
+
+
+
+
+
+
