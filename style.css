@@ -1243,8 +1243,8 @@ footer {
     }
 
     #home p {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     
     #tabella_orari {
