@@ -1146,6 +1146,14 @@ footer {
         padding-bottom: 5rem;
     }
 
+    .serv_box {
+        padding-bottom: 10rem;
+    }
+
+    #p_coach {
+        padding-top: 5rem;
+    }
+
     #servizi {
         height: 100%;
         padding-top: 2rem;
