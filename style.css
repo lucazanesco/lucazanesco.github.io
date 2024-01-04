@@ -363,7 +363,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle1.jpg');
+    background-image: url('./images/rectangle1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 50px;
@@ -378,7 +378,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle2.jpg');
+    background-image: url('./images/rectangle2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 50px;
@@ -393,7 +393,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle3.jpg');
+    background-image: url('./images/rectangle3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 50px;
@@ -408,7 +408,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/rectangle4.jpg');
+    background-image: url('./images/rectangle4.jpg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 50px;
@@ -434,7 +434,7 @@ a {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/sfondo_servizi2.jpg');
+    background-image: url('./images/sfondo_servizi2.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     filter:saturate(10) grayscale(100%);
@@ -481,7 +481,7 @@ a {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-image: url('/Users/lucazanesco/Desktop/Progetto_Tec_Web/images/sfondo_servizi.jpg');
+    background-image: url('./images/sfondo_servizi.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     filter:saturate(10) grayscale(100%);
