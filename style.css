@@ -408,7 +408,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url('./images/rectangle4.jpg.jpg');
+    background-image: url('./images/rectangle4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px 50px;
